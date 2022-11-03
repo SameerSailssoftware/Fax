@@ -55,7 +55,7 @@
 
 
 
-<div class="tab-content" id="myTabContent">
+<div class="tab-content">
 
 
 
@@ -828,12 +828,317 @@
     </ul>
 
 
-    <div class="tab-content" id="myTabContent">
+    <div id="myTabContent">
 
 
 
-      <div class="tab-pane fade show" id="faxlog" role="tabpanel" aria-labelledby="faxlog-tab">
+      <div class="tab-pane fade show mt-4" id="queue1" role="tabpanel" aria-labelledby="queue1-tab">
 
+
+                <div class=" col-md-12 flex" style=" column-gap: 1%;">
+          
+                  <div class="col-6">
+          
+                    <nav class="navbar navbar-expand-lg navbar-light nav1">
+                      <div class="container-fluid">
+                        <a class="navbar-brand">Incoming Fax</a>
+                      </div>
+                    </nav>
+
+                    <div class="area" style="height: 10rem !important;">
+          
+                    
+          
+                      <section class="container flex">
+                        <div>
+                          <h5 class="py-3">From Date</h5>
+                          <form class="row">
+                            <div class="col-3">
+                              <div class="input-group2 date" id="datepicker">
+                                <input type="text" class="form-control" id="date" placeholder="06/18/2022">
+                                <span class="input-group-append">
+                                  <span class="input-group-text bg-#DCDCDC d-block">
+                                    <i class="fa fa-calendar"></i>
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+          
+          
+                        <div>
+                          <h5 class="py-3">To Date</h5>
+                          <form class="row">
+                            <div class="col-3">
+                              <div class="input-group2 date" id="datepicker">
+                                <input type="text" class="form-control" id="date" placeholder="06/18/2022">
+                                <span class="input-group-append">
+                                  <span class="input-group-text bg-#DCDCDC d-block">
+                                    <i class="fa fa-calendar"></i>
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div>
+                          <h5 class="py-3">Search Text</h5>
+                          <form class="row">
+                            <div class="col-3">
+                              <div class="input-group2 date" id="datepicker">
+                                <input type="text" class="form-control" id="date" placeholder="" style="border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;">
+                                <span class="input-group-append">
+                                  
+                                </span>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      
+                      </section>
+          
+                    
+          
+                      <section class="container flex">
+                        <div>
+                          <h5 class="py-3">Group By</h5>
+                          <form class="row">
+                            <section class="flex align-items-center pt-2 gap-2">
+                              <div class="form-check flex">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+                                <label class="form-check-label mt--10" for="flexRadioDefault1">
+                                 <h5 class="py-1 brown "> Date Received </h5>
+                                </label>
+                              </div>
+                              <div class="form-check flex">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label mt--10" for="flexRadioDefault2">
+                                  <h5 class="py-1 brown"> Sent From Prescriber Fax# </h5>
+                                </label>
+                              </div>
+                
+                              <div class="form-check flex">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label mt--10" for="flexRadioDefault2">
+                                  <h5 class="py-1 brown"> Received Pharmacy Fax# </h5>
+                                </label>
+                              </div> &nbsp; &nbsp; &nbsp; &nbsp;
+
+                              
+                                <button class="btn" id="btn2"><span>- S</span> SEARCH</button>
+                                <button class="btn" id="btn2"><span>- C</span> CLEAR</button>
+          
+                            </section>
+
+                            
+                         </form>
+                      
+                      </section>
+          
+          
+          
+                    
+          
+                    </div>
+                    <br>
+          
+                    <nav class="navbar navbar-expand-lg navbar-light nav1">
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Select</a>
+                      </div>
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Date Recevied</a>
+                      </div>
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Sent From Fax#</a>
+                      </div>
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Comnents</a>
+                      </div>
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Sender</a>
+                      </div>
+                      <div class="container-fluid" style=" height: 40px; border-right: 2px solid #6CBFEF;">
+                        <a class="navbar-brand">Received From Fax#
+                        </a>
+                        <button type="button" class="btn"> <img src="icon/settings.png" height="15" width="15"></button>
+                      </div>
+                    </nav>
+
+                    <table id="tbstud">
+                      <tbody>
+                      <nav class="navbar navbar-expand-lg navbar-light nav2 mt-1 mb-1">
+                        <div class="container-fluid">
+                          <a class="navbar-brand brown fw-bold"> <input type="image" src="icon/down.png" style="margin-top: -3px;" class="rx-history-icon"> &nbsp; DATE RECEIVED. 07/21/2022 (1 ITEMS)</a>
+                        </div>
+                      </nav>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td style="color:#31AFE5; text-decoration: underline;"> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+
+                      
+
+                      </tbody>
+                    </table>
+
+
+                    <table id="tbstud">
+                      <tbody>
+                      <nav class="navbar navbar-expand-lg navbar-light nav2 mt-1 mb-1">
+                        <div class="container-fluid">
+                          <a class="navbar-brand brown fw-bold"> <input type="image" src="icon/down.png" style="margin-top: -3px;" class="rx-history-icon"> &nbsp; DATE RECEIVED. 07/21/2022 (1 ITEMS)</a>
+                        </div>
+                      </nav>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+
+                      
+
+                      </tbody>
+                    </table>
+
+                    <table id="tbstud">
+                      <tbody>
+                      <nav class="navbar navbar-expand-lg navbar-light nav2 mt-1 mb-1">
+                        <div class="container-fluid">
+                          <a class="navbar-brand brown fw-bold"> <input type="image" src="icon/down.png" style="margin-top: -3px;" class="rx-history-icon"> &nbsp; DATE RECEIVED. 07/21/2022 (1 ITEMS)</a>
+                        </div>
+                      </nav>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+
+                      
+
+                      </tbody>
+                    </table>
+
+                    <table id="tbstud">
+                      <tbody>
+                      <nav class="navbar navbar-expand-lg navbar-light nav2 mt-1 mb-1">
+                        <div class="container-fluid">
+                          <a class="navbar-brand brown fw-bold"> <input type="image" src="icon/down.png" style="margin-top: -3px;" class="rx-history-icon"> &nbsp; DATE RECEIVED. 07/21/2022 (1 ITEMS)</a>
+                        </div>
+                      </nav>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td style="color:#31AFE5; text-decoration: underline;"> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+                      <tr class="customer_row">
+                        <td class="left-5 bg-green">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp;
+                          <input type="image" src="icon/eye.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+                        <td class="green">07/21/2022</td>
+                        <td>5034367197</td>
+                        <td> </td>
+                        <td style="color:#31AFE5; text-decoration: underline;"> MAP PRESCRIBER</td>
+                        <td class="right-5">18447783045</td>
+                      </tr>
+
+                      
+
+                      </tbody>
+                    </table>
+
+                    <div class="pagination p1  align-items-center spc" style="height: 50px;">
+                      <b class="brown">Total Records: <span style="color:#31AFE5"> 4,</span></b> &nbsp;
+                        <div class="ml-lg-5" style="height: 26px;
+                      width: 26px;
+                      background-color: #E2FFE3;
+                      border: 1px solid #5D636B;
+                      border-radius: 2px;"></div> &nbsp; &nbsp;
+                       <span class="brown"> Partially added to Document </span>
+                      <div class="ml-lg-5">
+                       <button class="btn" id="btn6"><span>- S</span> ADD TO DOC QUEUE</button>
+                       <button class="btn" id="btn6"><span>- S</span> MARK AS READ</button>
+                       <button class="btn" id="btn6"><span>- S</span> REMOVE</button> 
+                      </div>
+                   </div>
+          
+          
+          
+          
+          
+                  </div>
+          
+                  <div class="col-6">
+          
+                    <nav class="navbar navbar-expand-lg navbar-light nav1">
+                      <div class="container-fluid">
+                        <a class="navbar-brand">Document Preview</a>
+          
+                      </div>
+                    </nav>
+                    <div class="area" style="height: 47% !important;">
+          
+                    
+                      <div class="pagination p1  align-items-center spc" style="height: 50px;">                          
+                        <div class="ml-lg-5 flex justify-content-between gap-4">
+                         <button class="btn" id="btn6"><span>- P</span> SPLIT</button>
+                         <button class="btn" id="btn6"><span>- I</span>ZOOM IN</button>
+                         <button class="btn" id="btn6"><span>- O</span>ZOOM OUT</button>
+                         <button class="btn" id="btn6"><span>- T</span> PRINT</button>
+                         <button class="btn" id="btn6"><span>- V</span> PREVIEW</button>
+                         <button class="btn" id="btn6"><span>- G</span> DOC QUEUE</button> 
+                        </div>
+                     </div>
+          
+                     
+          
+          
+          
+                    
+          
+                      </div>
+                    
+          
+          
+          
+          
+          
+                  </div>
+                </div>
 
         
       </div>

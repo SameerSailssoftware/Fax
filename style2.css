@@ -13,10 +13,25 @@ body{
     height: 45px;
 }
 
+
+.nav2 {
+    background-color: #d4e2ee !important;
+    border-radius: 10px;
+    height: 40px;
+    color: #5D636B;
+}
+
 .navbar-light .navbar-brand {
     color: rgb(255 255 255 / 90%);
     font-family: sans-serif;
     font-size: 16px;
+}
+
+
+.rx-history-icon {
+    height: 16px;
+    width: 20px;
+    vertical-align: middle;
 }
 
 .flex {
@@ -88,6 +103,18 @@ body{
     align-items: center;
     justify-content: flex-start;
 }
+
+#btn6 {
+    background-color: #ffffff;
+    height: 40px;
+    border-width: 1px;
+    font-weight: 550;
+    border-color: #51a351;
+    align-self: center;
+    font-size: 13px;
+    color: #51a351;
+    border-radius: 5px;
+}
 .btn span {
     background-color: #51A351 !important;
     padding: 4px 4px;
@@ -98,7 +125,6 @@ body{
 
 .container {
     display: flex;
-    justify-content: space-between;
     margin-left: 0px;
     column-gap: 30px;
 }
@@ -123,6 +149,15 @@ body{
     color: #31afe5;
     font-size: 13px;
     width: 347px;
+    font-weight: 600;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.py-3 {
+    color: #31afe5;
+    font-size: 13px;
+    width: 100%;
     font-weight: 600;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
@@ -323,6 +358,18 @@ body{
     align-items: stretch;
     width: 100%;
 }
+
+.input-group2 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    align-items: stretch;
+    width: 17rem;
+}
+
+
+
 .input-group-text {
     display: flex;
     align-items: center;
@@ -349,6 +396,10 @@ body{
     height: 45px;
     font-weight: normal;
 
+}
+
+#myTabContent {
+    margin: 1.5rem !important;
 }
 
 #tbstud {
@@ -719,7 +770,6 @@ padding: 9px 0px;
 
 .container {
     display: flex;
-    justify-content: space-between;
     margin-left: 10px;
     column-gap: 40px;
 }
