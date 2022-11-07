@@ -27,6 +27,11 @@ body{
     font-size: 16px;
 }
 
+.bold{
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
 
 .rx-history-icon {
     height: 16px;
@@ -36,6 +41,7 @@ body{
 
 .flex {
     display: flex !important;
+    font-family: sans-serif;
 }
 
 .area {
@@ -87,7 +93,7 @@ body{
     border-radius: 5px;
 }
 
-#btn3 {
+.btn3 {
     background-color: #1b8ab9;
     height: 40px;
     display: flex;
@@ -247,6 +253,18 @@ body{
     padding-top: 1rem !important;
     padding-bottom: 0.5rem !important;
 }
+
+.py-4 {
+    padding-left: 13px;
+    color: #31AFE5;
+    display: flex;
+    font-size: 13px;
+    width: 100%;
+    padding-top: 7px !important;
+    padding-bottom: 0.5rem !important;
+}
+
+
 
 .brown {
     color: #5D636B !important;
@@ -796,3 +814,51 @@ padding: 9px 0px;
     box-shadow: 0 4px 2px 0px rgb(0 0 0 / 10%);
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* popups............................... */
+
+  
+  .loginpopup:hover {
+    background-color: #071b51;
+    color: #fff;
+  }
+  
+  /*hover on span*/
+  .popuptext:hover {
+    pointer-events: auto;
+  }
+
+  .popuphead {
+    background-color: #1B8AB9 !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+}
+
+  
+  .popuptext {
+    visibility:hidden;
+    width: 315px;
+    color: #071b51;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 83%;
+    top: 35%;
+  }
+  .show {
+    visibility: visible;
+  }

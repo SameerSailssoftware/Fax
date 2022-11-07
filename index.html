@@ -21,6 +21,14 @@
 </head>
 
 
+<script>
+  function openPopup() {
+  var popup1 = document.getElementById("myPopup");
+  popup1.classList.toggle("show");
+}
+</script>
+
+
 <body>
 
 
@@ -84,7 +92,7 @@
 
       </div>
     </nav>
-    <div class="area">
+    <div class="area" style="height: 13rem;">
 
       <section class="container">
         <div>
@@ -209,8 +217,8 @@
         
         <div>
           <h5 class="py-2">Refill Request Status</h5>
-          <form class="row bg-lightbrown radius" style="width: 24rem;">
-            <section class="flex pt-2 gap-2">
+          <form class="row radius" style="width: 24rem;">
+            <section class="flex pt-2 gap-2 bg-lightbrown">
               <div class="form-check flex">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
                 <label class="form-check-label mt--10" for="flexRadioDefault1">
@@ -243,9 +251,74 @@
 
   <br>
           <div class="flex justify-content-end pr-3">
-                <button class="btn" id="btn3"> <img src="./icon/Group 804.png" alt=""></span> Color Legend</button>
+                <button class="btn btn3" id="loginbutton" onclick="openPopup()"> <img src="./icon/Group 804.png" alt=""></span> Color Legend</button>
         
          </div>
+
+
+        <span id="myPopup" class="popuptext">
+
+          <nav class="navbar navbar-expand-lg navbar-light popuphead">
+            <div class="container-fluid flex justify-content-md-start">
+              <button type="button" class="btn"> <img src="./icon/colors.png" height="25px" width="25px"></button> <span style="color: #fff;"> Color Legend </span>
+            </div>
+            <div>
+              <button type="button" class="btn" id="loginbutton" onclick="openPopup();"> <img src="./icon/cross.png" height="25px" width="25px" alt=""> </button>
+            </div>
+          </nav>
+
+          <div class="area" style="height: 100%;">
+
+            <h5 class="py-4 brown bold pl-3 "> Rx Color Coding  </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c1.png" height="13px" width="30px" alt=""> Discontined Rx  </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c2.png" height="13px" width="30px" alt=""> Deffered Rx  </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c3.png" height="13px" width="30px" alt=""> Refill Due </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c4.png" height="13px" width="30px" alt=""> Normal/Expired (User) Rx </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c5.png" height="13px" width="30px" alt=""> Expired Rx </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c6.png" height="13px" width="30px" alt=""> Early to Refill </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c7.png" height="13px" width="30px" alt=""> Deffered and Expired Rx</h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c8.png" height="13px" width="30px" alt=""> Deffered and Expired (User) Rx </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c9.png" height="13px" width="30px" alt=""> Deffered and Discontuined Rx </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c10.png" height="13px" width="30px" alt="">Expired and Disontined Rx</h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c11.png" height="13px" width="30px" alt=""> Expired (User) and Discontined Rx</h5>
+            <h5 class="py-4 brown bold pl-3"> Drug Color Coding</h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c12.png" height="13px" width="30px" alt=""> Control Deffered Rx
+            </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c13.png" height="13px" width="30px" alt=""> Non-Control Deffered Rx
+            </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c14.png" height="13px" width="30px" alt=""> Control Rx Not PickedUp
+            </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c15.png" height="13px" width="30px" alt="">Non-Control Rx Not PickedUp
+            </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c16.png" height="13px" width="30px" alt="">Control PickedUp Rx
+            </h5>
+            <h5 class="py-4 brown bold pl-3 flex align-items-center gap-2"> <img src="./icon/c17.png" height="13px" width="30px" alt="">Non-Xontrol PickedUp Rx
+            </h5>
+
+
+          </div>
+
+        </span>
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
 
   <div class="m-4">
 
