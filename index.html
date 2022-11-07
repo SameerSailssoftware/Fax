@@ -43,7 +43,7 @@
 
 
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="patient-tab" data-bs-toggle="tab" data-bs-target="#patient" type="button" role="patient" aria-controls="patient" aria-selected="false">Batched Faxes</button>
+        <button class="nav-link" id="batchedfaxes-tab" data-bs-toggle="tab" data-bs-target="#batchedfaxes" type="button" role="batchedfaxes" aria-controls="batchedfaxes" aria-selected="false">Batched Faxes</button>
       </li>
 
 
@@ -1515,13 +1515,105 @@
 
 
 
+<!-- Batched Faxes starts................. -->
+
+
+<div class="tab-pane fade show" id="batchedfaxes" role="tabpanel" aria-labelledby="batchedfaxes-tab">
+
+  <div class="center pt-5 pl-4">
+    <div class="title">
+      <img src="icon/settings-icon.png" style="width: 39.55px; height: 41.04px;"> &nbsp;
+      <h2 class="title-text">BATCHED FAXES</h2>
+    </div>
+     
+      
+    </div>
+
+<div class="m-4">
+  
+      
+  <nav class="navbar navbar-expand-lg navbar-light nav1">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">Batched Faxes</a>
+
+    </div>
+  </nav>
+  <table id="tbstud">
+    <tbody><tr>
+      <th class="column_heading2" style="border-top-left-radius: 5px;">Select</th>
+      <th class="column_heading2">Rx</th>
+      <th class="column_heading2">Subject</th>
+      <th class="column_heading2">Cancel Status</th>
+      <th class="column_heading2"> Fax To</th>
+      <th class="column_heading2">Fax Form</th>
+      <th class="column_heading2">Fax#</th>
+      <th class="column_heading2">Reply Date</th>
+      <th class="column_heading2">Status</th>
+      <th class="column_heading2" style="border-top-right-radius: 5px;">Note &nbsp; <button type="button" class="btn"> <img src="icon/settings-brown.png" height="15" width="15"></button></th>
+    </tr>
+
+    <tr class="customer_row">
+      <td class="left-5"><input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp; <input type="image" src="icon/edit.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+      <td class="green">201001, 105113</td>
+      <td>HISTORY REPORT OF MIKE</td>
+      <td></td>
+      <td>BELLY, SALMAN</td>
+      <td>MIKEE, TERRI</td>
+      <td>2343543453</td>
+      <td> 08/25/2022/ 10:36:35 am</td>
+      <td><div class="highlight bg-green green" id="highlight5"> Processing </div></td>
+      <td class="right-5"></td>
+    </tr>
+
+    <tr class="customer_row">
+      <td class="left-5"><input type="checkbox" class="custom-control-input" id="customControlInline"> &nbsp; <input type="image" src="icon/edit.png" style="margin-top: -5px;" class="rx-history-icon"></td>
+      <td class="green">201001, 105113</td>
+      <td>HISTORY REPORT OF MIKE</td>
+      <td></td>
+      <td>BELLY, SALMAN</td>
+      <td>MIKEE, TERRI</td>
+      <td>2343543453</td>
+      <td> 08/25/2022/ 10:36:35 am</td>
+      <td><div class="highlight bg-green green" id="highlight5"> Processing </div></td>
+      <td class="right-5"></td>
+    </tr>
+
+  </tbody></table>
+
+</div>
 
 
 
+<div class="m-4 navbar-light spc" style="height: 100%;">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      
+
+      <div class="flex gap-3">
+      </div>
 
 
+    <div>
+
+          <button class="btn" id="btn2"><span>- R</span> RESEND</button>
+          <button class="btn" id="btn2"><span>- R</span> RESEND</button>
+          <button class="btn" id="btn2"><span>- L</span> CLOSE</button>
+
+    </div>
+  
+
+    </div>
+
+    
+  </nav>
+
+  
+</div>
 
 
+</div>
+
+<!-- Batched Faxes End................. -->
 
 
 
