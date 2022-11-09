@@ -927,3 +927,69 @@ padding: 9px 0px;
     left: 41% !important;
     top: 31% !important;
   }
+
+
+
+
+
+
+  /* Print Button Popups......................... */
+
+    /*hover on span*/
+    .popuptext3:hover {
+        pointer-events: auto;
+      }
+
+      .popuphead3 {
+        background-color: #31afe5 !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 45px;
+        font-size: 16px;
+        width: 30rem;
+    }
+
+  .popuptext3 {
+    visibility: hidden;
+    width: 439.5px;
+    height: 319px;
+    color: #071b51;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 41% !important;
+    top: 31% !important;
+  }
+
+
+    /* RESEND FAX Button Popups......................... */
+
+    /*hover on span*/
+    .popuptext4:hover {
+        pointer-events: auto;
+      }
+
+      .popuphead4 {
+        background-color: #31afe5 !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 45px;
+        font-size: 16px;
+        width: 30rem;
+    }
+
+  .popuptext4 {
+    visibility: hidden;
+    width: 439.5px;
+    height: 319px;
+    color: #071b51;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 41% !important;
+    top: 31% !important;
+  }
