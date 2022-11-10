@@ -403,6 +403,15 @@ body{
     width: 14.5rem;
 }
 
+.input-group4 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    align-items: stretch;
+    width: 10.5rem;
+}
+
 
 
 .input-group-text {
@@ -1018,6 +1027,37 @@ padding: 9px 0px;
     }
 
   .popuptext4 {
+    visibility: hidden;
+    width: 439.5px;
+    height: 319px;
+    color: #071b51;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 41% !important;
+    top: 31% !important;
+  }
+
+
+  /* RESEND E-REQUEST Button Popups......................... */
+
+    /*hover on span*/
+    .popuptext5:hover {
+        pointer-events: auto;
+      }
+
+      .popuphead5 {
+        background-color: #31afe5 !important;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 45px;
+        font-size: 16px;
+        width: 100rem;
+    }
+
+  .popuptext5 {
     visibility: hidden;
     width: 439.5px;
     height: 319px;
