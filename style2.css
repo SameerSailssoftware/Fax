@@ -394,6 +394,15 @@ body{
     width: 17rem;
 }
 
+.input-group3 {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 40px;
+    align-items: stretch;
+    width: 14.5rem;
+}
+
 
 
 .input-group-text {
@@ -718,6 +727,19 @@ padding: 9px 0px;
     border-radius: 5px;
 }
 
+#btn3 {
+    background-color: #ffffff;
+    height: 38px;
+    border-width: 1px;
+    width: 10rem;
+    font-weight: 550;
+    border-color: #31afe5;
+    align-self: center;
+    font-size: 13px;
+    color: #31afe5;
+    border-radius: 5px;
+}
+
 .btn-secondary:hover {
     color: #fff;
     background-color: #99aebe;
@@ -810,7 +832,22 @@ padding: 9px 0px;
 }
 
 
+/* ............... Currently Selected Rxs.......................... */
 
+.nav3 {
+    background-color: #d4e2ee !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+}
+.nav4 {
+    background-color: #fff !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+}
+
+/* ............... Currently Selected Rxs End.......................... */
 
 /* Responsive */
 
@@ -832,7 +869,7 @@ padding: 9px 0px;
     height: 170px;
     color: rgb(255, 255, 255);
     font-size: 10px;
-    box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 16%);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -977,7 +1014,7 @@ padding: 9px 0px;
         border-top-right-radius: 5px;
         height: 45px;
         font-size: 16px;
-        width: 30rem;
+        width: 100rem;
     }
 
   .popuptext4 {

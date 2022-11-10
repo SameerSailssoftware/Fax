@@ -522,27 +522,340 @@ function openPopup4() {
         </div>
       </nav>
 
-      <div class="area" style="height: 10rem; width: 30rem; padding-top: 20px;">
+      <div class="area" style="height: 52rem;
+      width: 100rem; padding-top: 20px;">
 
-        <div>
-          <h5 class="py-4">Refill Request Type</h5>
-          <form class="row">
-            <div class="col-3">
-              <div class="input-group date pl-2 pr-2" id="datepicker">
-                <input type="text" class="form-control" id="date" placeholder="ALL">
-                <span class="input-group-append">
-                  <span class="input-group-text bg-#DCDCDC d-block">
-                    <i class="fa fa-sort-down"></i>
-                  </span>
-                </span>
+            <div class=" col-md-12 flex pt-1 pl-2 pr-4" style=" column-gap: 1%;">
+                      
+              <div class="col-6">
+
+                <nav class="navbar navbar-expand-lg navbar-light nav1">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">Currently Selected Rxs</a>
+                  </div>
+                </nav>
+                
+                <div class="area" style="height:9rem;">
+
+                <table id="tbstud">
+                  <tbody>
+                    <tr class="customer_row bg-lightbrown">
+                      <td>From Name</td>
+                      <td>To Name</td>
+                      <td>To Fax#</td>
+                      <td> Rx#</td>
+                      <td class="flex align-items-center justify-content-center">Rx Origin &nbsp; &nbsp; <img src="icon/settings-brown.png" height="15" width="15"></td>
+                    </tr>
+
+                    <tr class="customer_row">
+                      <td>DANIEL, SHEKAR</td>
+                      <td>BATES, ANNA</td>
+                      <td>11234567899</td>
+                      <td> 105122</td>
+                      <td >WRITTEN</td>
+                    </tr>
+                  
+                  <tr class="customer_row">
+                    <td>DANIEL, SHEKAR</td>
+                    <td>BATES, ANNA</td>
+                    <td>11234567899</td>
+                    <td> 105122</td>
+                    <td >WRITTEN</td>
+                  </tr>
+
+                  
+
+                  </tbody>
+                </table>
+
+              </div> <br>
+
+
+
+              
+
+                
+
+              <div class="area" style="height:15rem;">
+
+                <section class="container flex">
+                  <div>
+                    <h5 class="py-3 flex">Fax Subuect</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="REFILL REQUEST" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+    
+    
+                  <div>
+                    <h5 class="py-3 flex">From Name</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="DANIEL, SHEKAR" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div>
+                    <h5 class="py-3 flex">Send Fax To</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <form class="row radius" style="width: 24rem;">
+                          <section class="flex pt-2 gap-2 bg-lightbrown radius flex align-items-center" style="width: 15rem;">
+                            <div class="form-check flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+                              <label class="form-check-label mt--10" for="flexRadioDefault1">
+                               <h5 class="py-1 brown ">Prescriber</h5>
+                              </label>
+                            </div>
+                            <div class="form-check flex">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                              <label class="form-check-label mt--10" for="flexRadioDefault2">
+                                <h5 class="py-1 brown">Facility</h5>
+                              </label>
+                            </div>
+                          </section>
+                        </form>
+                      </div>
+                    </form>
+                  </div>
+                
+                </section>
+
+                <section class="container flex">
+                  <div>
+                    <h5 class="py-3 flex">To Name</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="BATES, ANNA" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+    
+    
+                  <div>
+                    <h5 class="py-3 flex">From Fax#</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control bg-lightbrown" id="date" placeholder="(184)477-83045" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div>
+                    <h5 class="py-3 flex">From Fax#</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="(112)345-67899" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                
+                </section>
+
+                <section class="container flex">
+                  <div>
+                    <h5 class="py-3 flex">Notes</h5>
+                    <form class="row">
+                      <div class="col-12">
+                        <div class="input-group3 date" id="datepicker" style="width: 47.5rem;">
+                          <input type="text" class="form-control" id="date" placeholder="Notes" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+    
+                
+                </section>
+              
+              
+              </div> <br>
+
+             
+
+              <nav class="navbar navbar-expand-lg navbar-light nav1">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Already Batched Rxs</a>
+                </div>
+              </nav>
+
+              <div class="area" style="height:9rem;">
+
+                <table id="tbstud">
+                  <tbody>
+                    <tr class="customer_row bg-lightbrown">
+                      <td>From Name</td>
+                      <td>To Name</td>
+                      <td>To Fax#</td>
+                      <td> Rx#</td>
+                      <td>Ref#</td>
+                      <td>Fax Date</td>
+                      <td class="flex align-items-center justify-content-center">Time Info &nbsp; &nbsp; <img src="icon/settings-brown.png" height="15" width="15"></td>
+                    </tr>
+
+                    <tr class="customer_row">
+                      <td>JAYANTH, SAII</td>
+                      <td>RAO, LAKSHMA </td>
+                      <td>11234567899</td>
+                      <td> 105122</td>
+                      <td> 0</td>
+                      <td> 08/11/2022</td>
+                      <td>04:09:12 PM</td>
+                    </tr>
+                  
+                    <tr class="customer_row">
+                      <td>JIMM, KARRY</td>
+                      <td>CARL, THOMPSON </td>
+                      <td>11234567899</td>
+                      <td> 105122</td>
+                      <td> 0</td>
+                      <td> 08/11/2022</td>
+                      <td>02:10:27 PM</td>
+                    </tr>
+
+                  
+
+                  </tbody>
+                </table>
+
+              </div>
+              
+              
+
+               
+
+
+
+
+              </div>
+
+              <div class="col-6">
+
+                <nav class="navbar navbar-expand-lg navbar-light nav1">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">Request would be sent using SFax service</a>
+
+                  </div>
+                </nav>
+               
+
+                <section class="container flex">
+                  <div>
+                    <h5 class="py-3 flex">Fax Subuect</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="06/18/2022">
+                          <span class="input-group-append">
+                            <span class="input-group-text bg-#DCDCDC d-block">
+                              <i class="fa fa-calendar"></i>
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+    
+    
+                  <div>
+                    <h5 class="py-3 flex">From Name</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="input-group3 date" id="datepicker">
+                          <input type="text" class="form-control" id="date" placeholder="DANIEL, SHEKAR" style="border-top-right-radius: 5px;
+                          border-bottom-right-radius: 5px;">
+                          <span class="input-group-append">
+                            
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div>
+                    <h5 class="py-3 flex">Send Fax To</h5>
+                    <form class="row">
+                      <div class="col-3">
+                        <div class="flex align-items-center">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <h5 class="py-1 brown">Include Cover Page</h5>
+                        </div>
+                      </div></form>
+                    
+                  </div>
+                
+                </section>
+
+                <div class="pl-4">
+                  <h5 class="py-2 flex">Format</h5>
+                  <form class="row radius" style="width: 24rem;">
+                    <section class="flex pt-2 gap-2 bg-lightbrown radius">
+                      <div class="form-check flex">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked="">
+                        <label class="form-check-label mt--10" for="flexRadioDefault1">
+                         <h5 class="py-1 brown ">Multiple Rxs Per Page</h5>
+                        </label>
+                      </div>
+                      <div class="form-check flex">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label mt--10" for="flexRadioDefault2">
+                          <h5 class="py-1 brown"> Sigle Rx Per Page </h5>
+                        </label>
+                      </div>
+                    </section>
+                  </form>
+                </div>
+
+
+                <img src="icon/Doc2.png" style=" width: 615.19px; height: 569.01px;">
+
+                <div class="flex align-items-center justify-content-center">
+                  <button class="btn3" id="btn3"><span>^P</span>PRINT LOCALLY</button> 
+                  <button class="btn3" id="btn3"><span>^F</span>FAX NOW</button> 
+                  <button class="btn3" id="btn3"><span>^B</span>BATCH FAX</button> 
+                  <button class="btn3" id="btn3"><span>^L</span>CANCEL</button> 
+                   
+                </div>
+
+
               </div>
             </div>
-          </form>
-        </div>
-       
-       <div class="btn2 justify-content-end pt-3 pr-4">
-        <button class="btn3" id="btn1"><span>^O</span>OK</button>
-      </div>
 
       </div>
 
